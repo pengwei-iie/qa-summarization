@@ -211,7 +211,7 @@ class Summarizer(pl.LightningModule):
         parser.add_argument("--dropout_rate", type=float, default=0.1, help="Drop out rate for classifier")
         parser.add_argument("--num_classes", type=int, default=2, help="Number of classes")
         parser.add_argument("--classifier_weight", type=float, default=0.5, help="Loss weight for classifier")
-        parser.add_argument("--summarizer_weight", type=float, default=0, help="Loss weight for Summarizer")
+        parser.add_argument("--summarizer_weight", type=float, default=1.0, help="Loss weight for Summarizer")
         
         return parser
 
